@@ -15,7 +15,7 @@ export const TopNavigation = ({showBackArrow = false}: { showBackArrow?: boolean
     return <div
         className="navbar bg-white w-full mb-2 border-b border-black justify-center cursor-pointer md:justify-start text-neutral-content">
 
-        {showBackArrow && (<div onClick={() => router.back()} className="absolute left-4"><BackArrowIcon width={24} height={24}/></div>)}
+        {showBackArrow && (<div onClick={() => router.back()} className="md:hidden absolute left-4"><BackArrowIcon width={24} height={24}/></div>)}
 
 
         <Link href="/" passHref={true}>

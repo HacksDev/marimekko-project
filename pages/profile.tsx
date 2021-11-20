@@ -90,7 +90,7 @@ const Profile: NextPage = () => {
                     </div>
                 </div>
 
-                <div className="card border  rounded  compact mt-2 side bg-base-100">
+                <div className="card border  compact mt-2 side bg-base-100">
                     <div className="flex-row items-center card-body">
                         <div className="flex-1"><h2 className="card-title leading-none">Things</h2>
                             <p className="text-base-content text-opacity-40 leading-none">My fucking things</p>
@@ -105,7 +105,7 @@ const Profile: NextPage = () => {
                     </div>
                 </div>
 
-                <div className="card border  rounded  compact mt-2 side bg-base-100">
+                <div className="card border  compact mt-2 side bg-base-100">
                     <div className="flex-row items-center card-body">
                         <div className="flex-1"><h2 className="card-title leading-none">My Swaps</h2>
                             <p className="text-base-content text-opacity-40 leading-none">My fucking s(laves)waps</p>

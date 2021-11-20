@@ -2,7 +2,6 @@ import type {NextPage} from 'next'
 import {BottomNavigation} from "../../components/common/BottomNavigation/BottomNavigation";
 import {TopNavigation} from "../../components/common/TopNavigation";
 import {MainContent} from "../../components/common/MainContent";
-import LocationIcon from "../../components/icons/location.svg";
 import Link from 'next/link';
 
 const Home: NextPage = () => {
@@ -17,7 +16,7 @@ const Home: NextPage = () => {
 
                         <div className="w-1/2 md:w-1/2 xl:w-1/4 p-2">
                             <Link passHref={true} href="/catalog/123">
-                               <div className="c-card border block bg-white rounded-lg overflow-hidden">
+                               <div className="cursor-pointer c-card border block bg-white rounded-lg overflow-hidden">
                                 <div className="w-full overflow-hidden">
                                     <img className="h-full" src="/images/product_1.jpg" alt="proruct card"/>
                                 </div>
@@ -36,7 +35,7 @@ const Home: NextPage = () => {
 
                         <div className="w-1/2 md:w-1/2 xl:w-1/4 p-2">
                             <Link passHref={true} href="/catalog/123">
-                                <div className="c-card border block bg-white rounded-lg overflow-hidden">
+                                <div className="cursor-pointer c-card border block bg-white rounded-lg overflow-hidden">
                                     <div className="w-full overflow-hidden">
                                         <img className="h-full" src="/images/product_1.jpg" alt="proruct card"/>
                                     </div>
