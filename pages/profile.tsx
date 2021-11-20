@@ -120,9 +120,6 @@ const Profile: NextPage = () => {
                     </div>
                 </div>
 
-                <div className="min-h-16" />
-
-
             </div>
             <BottomNavigation/>
         </MainContent>
