@@ -1,29 +1,41 @@
 import type {NextPage} from 'next'
-import {BottomNavigation} from "../components/common/BottomNavigation/BottomNavigation";
-import {TopNavigation} from "../components/common/TopNavigation";
-import {MainContent} from "../components/common/MainContent";
+import {BottomNavigation} from "../../components/common/BottomNavigation/BottomNavigation";
+import {TopNavigation} from "../../components/common/TopNavigation";
+import {MainContent} from "../../components/common/MainContent";
+import Link from 'next/link';
 
-const Profile: NextPage = () => {
+const ProfilePage: NextPage = () => {
     return (
         <MainContent>
             <TopNavigation/>
             <div className="flex-col px-2 mb-5">
 
-                <div className="card border  rounded compact side bg-base-100">
+                <div className="card border   compact side bg-base-100">
                     <div className="flex-row items-center space-x-4 card-body">
                         <div>
                             <div className="avatar">
-                                <div className="rounded-full w-14 h-14 shadow">
-                                    <img alt="img"  src="https://i.pravatar.cc/500?img=32"/>
+                                <div className="w-full w-14 h-14 shadow">
+                                    <img alt="img" src="https://i.pravatar.cc/500?img=32"/>
                                 </div>
                             </div>
                         </div>
                         <div><h2 className="leading-none card-title">Janis Johnson</h2> <p
-                            className="leading-none text-base-content text-opacity-40">Fucking marketing specialist</p></div>
+                            className="leading-none text-base-content text-opacity-40">Fucking marketing specialist</p>
+                        </div>
                     </div>
                 </div>
 
-                <div className="w-full card flex flex-col md:flex-row border  rounded  compact mt-2 side bg-base-100 stats">
+                <div className="w-full flex flex-row items-center mt-2 bg-base-100">
+                    <Link href={"/scan"} passHref={true}>
+                        <button className="btn btn-primary flex-1">Scan QR</button>
+                    </Link>
+                    <div className="w-3" />
+                    <Link href={"/profile/qr"} passHref={true}>
+                        <button className="btn btn-primary flex-1">My QR</button>
+                    </Link>
+                </div>
+
+                <div className="w-full card flex flex-col md:flex-row border    compact mt-2 side bg-base-100 stats">
                     <div className="stat">
                         <div className="stat-figure text-primary">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
@@ -49,18 +61,18 @@ const Profile: NextPage = () => {
                 </div>
 
 
-
-                <div style={{background: 'white'}} className="collapse card border  rounded  compact side bg-base-100  mt-2 collapse-arrow w-full">
+                <div style={{background: 'white'}}
+                     className="collapse card border    compact side bg-base-100  mt-2 collapse-arrow w-full">
                     <input type="checkbox"/>
-                        <div style={{background: 'white'}} className="collapse-title text-xl font-medium">
-                            Notifications <div className="badge bg-accent border-0  ml-2">+999</div>
-                        </div>
-                        <div style={{background: 'white'}} className="collapse-content">
-                            <p><span className="badge badge-secondary badge-xs mr-2"/>Add new item of leather shorts</p>
-                        </div>
+                    <div style={{background: 'white'}} className="collapse-title text-xl font-medium">
+                        Notifications <div className="badge bg-accent border-0  ml-2">+999</div>
+                    </div>
+                    <div style={{background: 'white'}} className="collapse-content">
+                        <p><span className="badge badge-secondary badge-xs mr-2"/>Add new item of leather shorts</p>
+                    </div>
                 </div>
 
-                <div className="card border  rounded  compact mt-2 side bg-base-100">
+                <div className="card border    compact mt-2 side bg-base-100">
                     <div className="flex-row items-center card-body">
                         <div className="flex-1"><h2 className="card-title leading-none">Account Information</h2>
                             <p className="text-base-content text-opacity-40 leading-none">Email, Phone number, Name</p>
@@ -75,7 +87,7 @@ const Profile: NextPage = () => {
                     </div>
                 </div>
 
-                <div className="card border  rounded  compact mt-2 side bg-base-100">
+                <div className="card border    compact mt-2 side bg-base-100">
                     <div className="flex-row items-center card-body">
                         <div className="flex-1"><h2 className="card-title leading-none">My Swaps</h2>
                             <p className="text-base-content text-opacity-40 leading-none">My fucking s(laves)waps</p>
@@ -126,4 +138,4 @@ const Profile: NextPage = () => {
     )
 }
 
-export default Profile
+export default ProfilePage
