@@ -3,7 +3,7 @@ import {useRouter} from "next/router";
 
 const buttons: Array<{ text: string; href: string; }> = [
     {text: 'Catalog', href: '/catalog'},
-    {text: 'Add new Ad', href: '/addNewAd'},
+    {text: 'Ads', href: '/board'},
     {text: 'Profile', href: '/profile'},
 ]
 
@@ -11,22 +11,22 @@ const buttons: Array<{ text: string; href: string; }> = [
 export const TopNavigation = () => {
     const router = useRouter();
     return <div
-        className="navbar w-full mb-2 shadow-lg bg-primary justify-center md:justify-start text-neutral-content">
+        className="navbar w-full mb-2 border-b border-black justify-center md:justify-start text-neutral-content">
 
         <Link href="/" passHref={true}>
             <div className="cursor-pointer inline-flex px-2 mx-2">
-                <span className="text-lg font-bold">Marimekko</span>
-                <span className="text-lg ml-2 px-2 bg-neutral-content text-base-content font-bold">SHARE</span>
+                <span className="text-lg font-light text-base-content">Marimekko</span>
+                <span className="text-lg ml-2 px-2 border-solid border-2 border-secondary text-secondary font-bold">SHARE</span>
             </div>
         </Link>
 
 
         <div className="items-stretch hidden md:flex">
             {buttons.map((button) => {
-                const navClassName = button.href === router.pathname ? 'text-base-content' : '';
+                const navClassName = button.href === router.pathname ? 'text-secondary' : '';
                 return (
                     <Link key={button.text} href={button.href} passHref={true}>
-                        <nav className={`btn btn-ghost btn-sm rounded-btn ${navClassName}`}>
+                        <nav className={`btn btn-ghost btn-sm text-base-content rounded-btn ${navClassName}`}>
                             {button.text}
                         </nav>
                     </Link>

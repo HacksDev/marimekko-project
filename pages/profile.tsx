@@ -9,7 +9,7 @@ const Profile: NextPage = () => {
             <TopNavigation/>
             <div className="flex-col px-2 mb-5">
 
-                <div className="card shadow-lg compact side bg-base-100">
+                <div className="card border border-black rounded compact side bg-base-100">
                     <div className="flex-row items-center space-x-4 card-body">
                         <div>
                             <div className="avatar">
@@ -23,7 +23,7 @@ const Profile: NextPage = () => {
                     </div>
                 </div>
 
-                <div className="w-full card flex flex-col md:flex-row shadow-lg compact mt-2 side bg-base-100 stats">
+                <div className="w-full card flex flex-col md:flex-row border border-black rounded  compact mt-2 side bg-base-100 stats">
                     <div className="stat">
                         <div className="stat-figure text-primary">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
@@ -50,7 +50,7 @@ const Profile: NextPage = () => {
 
 
 
-                <div style={{background: 'white'}} className="collapse card shadow-lg compact side bg-base-100  mt-2 collapse-arrow w-full">
+                <div style={{background: 'white'}} className="collapse card border border-black rounded  compact side bg-base-100  mt-2 collapse-arrow w-full">
                     <input type="checkbox"/>
                         <div style={{background: 'white'}} className="collapse-title text-xl font-medium">
                             Notifications <div className="badge bg-accent border-0  ml-2">+999</div>
@@ -60,7 +60,7 @@ const Profile: NextPage = () => {
                         </div>
                 </div>
 
-                <div className="card shadow-lg compact mt-2 side bg-base-100">
+                <div className="card border border-black rounded  compact mt-2 side bg-base-100">
                     <div className="flex-row items-center card-body">
                         <div className="flex-1"><h2 className="card-title leading-none">Account Information</h2>
                             <p className="text-base-content text-opacity-40 leading-none">Email, Phone number, Name</p>
@@ -75,7 +75,7 @@ const Profile: NextPage = () => {
                     </div>
                 </div>
 
-                <div className="card shadow-lg compact mt-2 side bg-base-100">
+                <div className="card border border-black rounded  compact mt-2 side bg-base-100">
                     <div className="flex-row items-center card-body">
                         <div className="flex-1"><h2 className="card-title leading-none">My Swaps</h2>
                             <p className="text-base-content text-opacity-40 leading-none">My fucking s(laves)waps</p>
@@ -90,7 +90,7 @@ const Profile: NextPage = () => {
                     </div>
                 </div>
 
-                <div className="card shadow-lg compact mt-2 side bg-base-100">
+                <div className="card border border-black rounded  compact mt-2 side bg-base-100">
                     <div className="flex-row items-center card-body">
                         <div className="flex-1"><h2 className="card-title leading-none">Things</h2>
                             <p className="text-base-content text-opacity-40 leading-none">My fucking things</p>
@@ -105,7 +105,7 @@ const Profile: NextPage = () => {
                     </div>
                 </div>
 
-                <div className="card shadow-lg compact mt-2 side bg-base-100">
+                <div className="card border border-black rounded  compact mt-2 side bg-base-100">
                     <div className="flex-row items-center card-body">
                         <div className="flex-1"><h2 className="card-title leading-none">My Swaps</h2>
                             <p className="text-base-content text-opacity-40 leading-none">My fucking s(laves)waps</p>
