@@ -8,9 +8,12 @@ const Home: NextPage = () => {
     return (
         <MainContent>
             <TopNavigation/>
-            <div className="min-h-screen"/>
-            <BottomNavigation/>
+            <div className="flex-col px-2 mb-5">
+                <div className="card">Hqllo</div>
+
+            </div>
             <Footer/>
+            <BottomNavigation/>
         </MainContent>
     )
 }

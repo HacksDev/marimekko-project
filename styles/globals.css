@@ -1,4 +1,9 @@
 @import "fonts.css";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
 
 * {
   box-sizing: border-box;
@@ -6,7 +11,6 @@
   margin: 0;
 }
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
+html, body {
+  background: #f9fafb !important;
+}
