@@ -1,6 +1,15 @@
 import Link from "next/link";
+import {useRouter} from "next/router";
+
+const buttons: Array<{ text: string; href: string; }> = [
+    {text: 'Catalog', href: '/catalog'},
+    {text: 'Add new Ad', href: '/addNewAd'},
+    {text: 'Profile', href: '/profile'},
+]
+
 
 export const TopNavigation = () => {
+    const router = useRouter();
     return <div
         className="navbar w-full mb-2 shadow-lg bg-primary justify-center md:justify-start text-neutral-content">
 
@@ -13,12 +22,16 @@ export const TopNavigation = () => {
 
 
         <div className="items-stretch hidden md:flex">
-            <a className="btn btn-ghost btn-sm rounded-btn">
-                Catalog
-            </a>
-            <a className="btn btn-ghost btn-sm rounded-btn">
-                Profile
-            </a>
+            {buttons.map((button) => {
+                const navClassName = button.href === router.pathname ? 'text-base-content' : '';
+                return (
+                    <Link key={button.text} href={button.href} passHref={true}>
+                        <nav className={`btn btn-ghost btn-sm rounded-btn ${navClassName}`}>
+                            {button.text}
+                        </nav>
+                    </Link>
+                )
+            })}
         </div>
     </div>
 }

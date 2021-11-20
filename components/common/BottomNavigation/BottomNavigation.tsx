@@ -5,37 +5,17 @@ import Add from './icons/add.svg';
 import Link from "next/link";
 import {useRouter} from "next/router";
 
-const buttons: Array<{ text: string, href: string, icon: any, active: boolean }> = [
-    {
-        text: 'Home',
-        href: '/',
-        icon: Home,
-        active: false
-    },
-    {
-        text: 'Catalog',
-        href: '/catalog',
-        icon: Search,
-        active: false
-    },
+const buttons: Array<{ text: string, href: string, icon: any }> = [
+    {text: 'Home', href: '/', icon: Home},
+    {text: 'Catalog', href: '/catalog', icon: Search},
     // {
     //     text: 'Subscriptions',
     //     href: '/subscriptions',
     //     icon: Home,
     //     active: false
     // },
-    {
-        text: 'New Ad',
-        href: '/addNewAd',
-        icon: Add,
-        active: false
-    },
-    {
-        text: 'Profile',
-        href: '/profile',
-        icon: Profile,
-        active: false
-    },
+    {text: 'New Ad', href: '/addNewAd', icon: Add},
+    {text: 'Profile', href: '/profile', icon: Profile},
 ]
 
 export const BottomNavigation = () => {
