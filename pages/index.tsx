@@ -9,10 +9,9 @@ const Home: NextPage = () => {
         <MainContent>
             <TopNavigation/>
             <div className="flex-col px-2 mb-5">
-                <div className="card">Hqllo</div>
+                <div className="card">Hello</div>
 
             </div>
-            <Footer/>
             <BottomNavigation/>
         </MainContent>
     )

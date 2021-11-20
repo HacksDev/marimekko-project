@@ -11,7 +11,7 @@ const buttons: Array<{ text: string; href: string; }> = [
 export const TopNavigation = () => {
     const router = useRouter();
     return <div
-        className="navbar w-full mb-2 border-b border-black justify-center md:justify-start text-neutral-content">
+        className="navbar bg-white w-full mb-2 border-b border-black justify-center md:justify-start text-neutral-content">
 
         <Link href="/" passHref={true}>
             <div className="cursor-pointer inline-flex px-2 mx-2">
