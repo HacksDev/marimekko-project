@@ -1,5 +1,6 @@
 import Link from "next/link";
 import {useRouter} from "next/router";
+import BackArrowIcon from '../icons/left-arrow.svg';
 
 const buttons: Array<{ text: string; href: string; }> = [
     {text: 'Catalog', href: '/catalog'},
@@ -8,15 +9,20 @@ const buttons: Array<{ text: string; href: string; }> = [
 ]
 
 
-export const TopNavigation = () => {
+export const TopNavigation = ({showBackArrow = false}: { showBackArrow?: boolean }) => {
     const router = useRouter();
+
     return <div
-        className="navbar bg-white w-full mb-2 border-b border-black justify-center md:justify-start text-neutral-content">
+        className="navbar bg-white w-full mb-2 border-b border-black justify-center cursor-pointer md:justify-start text-neutral-content">
+
+        {showBackArrow && (<div onClick={() => router.back()} className="absolute left-4"><BackArrowIcon width={24} height={24}/></div>)}
+
 
         <Link href="/" passHref={true}>
             <div className="cursor-pointer inline-flex px-2 mx-2">
                 <span className="text-lg font-light text-base-content">Marimekko</span>
-                <span className="text-lg ml-2 px-2 border-solid border-2 border-secondary text-secondary font-bold">SHARE</span>
+                <span
+                    className="text-lg ml-2 px-2 border-solid border-2 border-secondary text-secondary font-bold">SHARE</span>
             </div>
         </Link>
 
