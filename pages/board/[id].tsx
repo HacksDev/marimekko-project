@@ -4,6 +4,7 @@ import {TopNavigation} from "../../components/common/TopNavigation";
 import {BottomNavigation} from "../../components/common/BottomNavigation/BottomNavigation";
 import {MainContent} from "../../components/common/MainContent";
 import LocationIcon from "../../components/icons/location.svg";
+import TickIcon from '../../components/icons/tick.svg';
 
 const BoardModelPage: NextPage = () => {
     return (
@@ -16,7 +17,13 @@ const BoardModelPage: NextPage = () => {
                              src="/images/product_1.jpg" alt="photo"/>
                     </div>
                     <div className="w-full relative md:w-3/5 text-left p-6 md:p-4 space-y-2">
-                        <p className="text-xl mt-0 text-gray-700 font-bold leading-none">Kyllikki Unikko</p>
+                        <p className="text-xl mt-0 text-gray-700 font-bold leading-none">Kyllikki Unikko
+                            <span className="ml-2 badge badge-success">
+                                <TickIcon className="inline-block w-4 h-4 mr-2 fill-current" />
+                                Verified
+                            </span>
+                        </p>
+
                         <p className="inline-flex leading-none justify-start text-xs align-top  flex-row">
                             <LocationIcon className="mr-0.5" width={12} height={12}/>
                             Saint-Petersburg

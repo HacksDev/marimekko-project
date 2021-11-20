@@ -4,6 +4,7 @@ import {MainContent} from "../../components/common/MainContent";
 import {BottomNavigation} from "../../components/common/BottomNavigation/BottomNavigation";
 import LocationIcon from '../../components/icons/location.svg';
 import Link from 'next/link';
+import TickIcon from "../../components/icons/tick.svg";
 
 const Index: NextPage = () => {
     return (
@@ -24,7 +25,12 @@ const Index: NextPage = () => {
                                     <img className="h-full" src="/images/product_1.jpg" alt="proruct card"/>
                                 </div>
                                 <div className="p-2">
-                                    <h2 className="font-bold">Kyllikki Unikko</h2>
+                                    <h2 className="font-bold">
+                                        Kyllikki Unikko
+                                        <span className="ml-2 badge badge-sm badge-success">
+                                            <TickIcon className="inline-block w-4 h-4 fill-current" />
+                                        </span>
+                                    </h2>
                                     <p className="font-extralight text-gray-700 text-xs">2019</p>
                                     <div className="flex justify-between align-bottom flex-row">
                                         <div className="inline-flex leading-none justify-start text-xs align-top  flex-row mt-1">

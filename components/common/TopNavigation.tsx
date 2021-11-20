@@ -3,8 +3,8 @@ import {useRouter} from "next/router";
 import BackArrowIcon from '../icons/left-arrow.svg';
 
 const buttons: Array<{ text: string; href: string; }> = [
+    {text: 'Board', href: '/board'},
     {text: 'Catalog', href: '/catalog'},
-    {text: 'Ads', href: '/board'},
     {text: 'Profile', href: '/profile'},
 ]
 

@@ -4,6 +4,7 @@ import {TopNavigation} from "../../components/common/TopNavigation";
 import {MainContent} from "../../components/common/MainContent";
 import Link from "next/link";
 import {useState} from "react";
+import TickIcon from "../../components/icons/tick.svg";
 
 const QRInfoPage: NextPage = () => {
     const [showModal, setShowModal] = useState(false);
@@ -24,7 +25,12 @@ const QRInfoPage: NextPage = () => {
                              src="/images/product_1.jpg" alt="photo"/>
                     </div>
                     <div className="w-full relative md:w-3/5 text-left p-6 md:p-4 space-y-2">
-                        <p className="text-xl mt-0 text-gray-700 font-bold leading-none">Kyllikki Unikko</p>
+                        <p className="text-xl mt-0 text-gray-700 font-bold leading-none">Kyllikki Unikko
+                            <span className="ml-2 badge badge-success">
+                                <TickIcon className="inline-block w-4 h-4 mr-2 fill-current" />
+                                Verified
+                            </span>
+                        </p>
 
                         <p className="font-extralight text-gray-700 leading-none text-xs">45,00 €</p>
 
@@ -33,7 +39,8 @@ const QRInfoPage: NextPage = () => {
 
                         <div className="flex flex-row align-baseline items-center">
                             <span className="text-gray-400 leading-none mr-2">Color: </span>
-                            <input type="radio" name="opt" defaultChecked={true} className="radio radio-lg mr-1" value="3"/>
+                            <input type="radio" name="opt" defaultChecked={true} className="radio radio-lg mr-1"
+                                   value="3"/>
                         </div>
 
                         <p className="mt-3 text-gray-400">Materials: 100 % Polyester</p>
