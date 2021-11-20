@@ -23,7 +23,7 @@ const Profile: NextPage = () => {
                     </div>
                 </div>
 
-                <div className="w-full card shadow-lg compact mt-2 side bg-base-100 stats">
+                <div className="w-full card flex flex-col md:flex-row shadow-lg compact mt-2 side bg-base-100 stats">
                     <div className="stat">
                         <div className="stat-figure text-primary">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
@@ -44,7 +44,7 @@ const Profile: NextPage = () => {
                             </svg>
                         </div>
                         <div className="stat-title">Total energy savings</div>
-                        <div className="stat-value text-info">2.123kW</div>
+                        <div className="stat-value text-2xl text-info">2.1kW</div>
                     </div>
                 </div>
 
@@ -119,6 +119,8 @@ const Profile: NextPage = () => {
                         </button>
                     </div>
                 </div>
+
+                <div className="min-h-16" />
 
 
             </div>
