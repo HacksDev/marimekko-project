@@ -11,9 +11,6 @@ const Index: NextPage = () => {
         <MainContent>
             <TopNavigation/>
             <div className="flex-col px-2 mb-5 overflow-hidden">
-                <button className="btn btn-secondary btn-outline btn-sm btn-block">Add new</button>
-
-
                 <div className="container">
                     <div className="flex flex-wrap -mx-2">
 
