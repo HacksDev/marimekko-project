@@ -2,12 +2,12 @@ import Link from "next/link";
 
 export const TopNavigation = () => {
     return <div
-        className="navbar w-full mb-2 shadow-lg bg-accent justify-center md:justify-start text-neutral-content">
+        className="navbar w-full mb-2 shadow-lg bg-primary justify-center md:justify-start text-neutral-content">
 
         <Link href="/" passHref={true}>
             <div className="cursor-pointer inline-flex px-2 mx-2">
                 <span className="text-lg font-bold">Marimekko</span>
-                <span className="text-lg ml-2 px-2 text-neutral bg-neutral-content font-bold">SHARE</span>
+                <span className="text-lg ml-2 px-2 bg-neutral-content text-base-content font-bold">SHARE</span>
             </div>
         </Link>
 
