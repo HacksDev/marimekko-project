@@ -2,11 +2,11 @@ import type {NextPage} from 'next'
 import {BottomNavigation} from "../../components/common/BottomNavigation/BottomNavigation";
 import {TopNavigation} from "../../components/common/TopNavigation";
 import {MainContent} from "../../components/common/MainContent";
-import LocationIcon from "../../components/icons/location.svg";
 import Link from "next/link";
+import {useState} from "react";
 
 const QRInfoPage: NextPage = () => {
-
+    const [showModal, setShowModal] = useState(false);
     return (
         <MainContent>
             <TopNavigation showBackArrow={true}/>
@@ -25,10 +25,6 @@ const QRInfoPage: NextPage = () => {
                     </div>
                     <div className="w-full relative md:w-3/5 text-left p-6 md:p-4 space-y-2">
                         <p className="text-xl mt-0 text-gray-700 font-bold leading-none">Kyllikki Unikko</p>
-                        <p className="inline-flex leading-none justify-start text-xs align-top  flex-row">
-                            <LocationIcon className="mr-0.5" width={12} height={12}/>
-                            Saint-Petersburg
-                        </p>
 
                         <p className="font-extralight text-gray-700 leading-none text-xs">45,00 €</p>
 
@@ -37,7 +33,7 @@ const QRInfoPage: NextPage = () => {
 
                         <div className="flex flex-row align-baseline items-center">
                             <span className="text-gray-400 leading-none mr-2">Color: </span>
-                            <input type="radio" name="opt" checked={true} className="radio radio-lg mr-1" value="3"/>
+                            <input type="radio" name="opt" defaultChecked={true} className="radio radio-lg mr-1" value="3"/>
                         </div>
 
                         <p className="mt-3 text-gray-400">Materials: 100 % Polyester</p>
@@ -69,15 +65,21 @@ const QRInfoPage: NextPage = () => {
                         </Link>
 
 
-                        <label htmlFor="my-modal-2" className="btn btn-block btn-secondary">
+                        <label htmlFor="my-modal-2"
+                               className="btn btn-block btn-secondary">
                             Continue purchase
                         </label>
-                        <input type="checkbox" id="my-modal-2" className="modal-toggle"/>
+                        <input type="checkbox" id="my-modal-2" onChange={(e) => setShowModal(e.target.checked)}
+                               checked={showModal} className="modal-toggle"/>
                         <div className="modal">
                             <div className="modal-box">
-                                <p>The request to continue the purchase was successfully sent to the seller. You can track the purchase status in your profile.</p>
+                                <p>The request to continue the purchase was successfully sent to the seller. You can
+                                    track the purchase status in your profile.</p>
                                 <div className="modal-action">
-                                    <label htmlFor="my-modal-2" className="btn btn-block btn-secondary">OK, Got it</label>
+                                    <Link href="/profile" passHref={true}>
+                                        <label htmlFor="my-modal-2"
+                                               className="btn btn-block btn-secondary">OK, Got it</label>
+                                    </Link>
                                 </div>
                             </div>
                         </div>

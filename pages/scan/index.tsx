@@ -5,11 +5,14 @@ import {MainContent} from "../../components/common/MainContent";
 import {useEffect} from "react";
 import {useRouter} from "next/router";
 
+
+let scanMockTimer: any;
 const ScanQRCodePage: NextPage = () => {
     const router = useRouter();
 
     useEffect(() => {
-        setTimeout(() => router.push('/scan/123'), 2000)
+        scanMockTimer = setTimeout(() => router.push('/scan/123'), 5000)
+        return () => clearTimeout(scanMockTimer)
     }, [router])
 
     return (
@@ -20,6 +23,7 @@ const ScanQRCodePage: NextPage = () => {
                     <div className="flex flex-col items-center space-x-4 card-body">
                         <h1 className="text-2xl w-full text-center">Scan QR</h1>
                         <button className="btn btn-ghost btn-lg btn-circle loading"/>
+                        <h1 className="text-lg w-full text-center">Simulation of scanning a real QR code...</h1>
                     </div>
                 </div>
 

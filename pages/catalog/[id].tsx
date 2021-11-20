@@ -1,5 +1,4 @@
 import type {NextPage} from 'next'
-import {useRouter} from "next/router";
 import {TopNavigation} from "../../components/common/TopNavigation";
 import {BottomNavigation} from "../../components/common/BottomNavigation/BottomNavigation";
 import {MainContent} from "../../components/common/MainContent";
@@ -7,7 +6,6 @@ import Link from "next/link";
 import {useState} from "react";
 
 const CatalogModelPage: NextPage = () => {
-    const router = useRouter();
     const [subscribed, setSubscribed] = useState(false);
     return (
         <MainContent>
@@ -26,12 +24,12 @@ const CatalogModelPage: NextPage = () => {
 
                         <div className="flex flex-row align-baseline items-center">
                             <span className="text-gray-400 leading-none mr-2">Color: </span>
-                            <input type="radio" name="opt" checked={true} className="radio radio-lg mr-1 radio-primary"
+                            <input type="radio" name="opt" defaultChecked={true} className="radio radio-lg mr-1 radio-primary"
                                    value="1"/>
-                            <input type="radio" name="opt" checked={true}
+                            <input type="radio" name="opt" defaultChecked={false}
                                    className="radio radio-lg mr-1 radio-secondary"
                                    value="2"/>
-                            <input type="radio" name="opt" checked={true} className="radio radio-lg mr-1" value="3"/>
+                            <input type="radio" name="opt" defaultChecked={false} className="radio radio-lg mr-1" value="3"/>
                         </div>
 
                         <p className="mt-3 text-gray-400">Materials: 100 % Polyester</p>

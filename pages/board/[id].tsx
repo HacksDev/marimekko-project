@@ -29,7 +29,7 @@ const BoardModelPage: NextPage = () => {
 
                         <div className="flex flex-row align-baseline items-center">
                             <span className="text-gray-400 leading-none mr-2">Color: </span>
-                            <input type="radio" name="opt" checked={true} className="radio radio-lg mr-1" value="3"/>
+                            <input type="radio" name="opt" defaultChecked={true} className="radio radio-lg mr-1" value="3"/>
                         </div>
 
                         <p className="mt-3 text-gray-400">Materials: 100 % Polyester</p>

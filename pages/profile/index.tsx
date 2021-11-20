@@ -65,47 +65,17 @@ const ProfilePage: NextPage = () => {
                      className="collapse card border    compact side bg-base-100  mt-2 collapse-arrow w-full">
                     <input type="checkbox"/>
                     <div style={{background: 'white'}} className="collapse-title text-xl font-medium">
-                        Notifications <div className="badge bg-accent border-0  ml-2">+999</div>
+                        Notifications <div className="badge bg-primary border-0  ml-2">+999</div>
                     </div>
                     <div style={{background: 'white'}} className="collapse-content">
                         <p><span className="badge badge-secondary badge-xs mr-2"/>Add new item of leather shorts</p>
                     </div>
                 </div>
 
-                <div className="card border    compact mt-2 side bg-base-100">
-                    <div className="flex-row items-center card-body">
-                        <div className="flex-1"><h2 className="card-title leading-none">Account Information</h2>
-                            <p className="text-base-content text-opacity-40 leading-none">Email, Phone number, Name</p>
-                        </div>
-                        <button className="btn btn-square  btn-sm btn-outline btn-primary">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                 className="inline-block w-6 h-6 stroke-current">
-                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
-                                      d="M9 5l7 7-7 7"/>
-                            </svg>
-                        </button>
-                    </div>
-                </div>
-
-                <div className="card border    compact mt-2 side bg-base-100">
-                    <div className="flex-row items-center card-body">
-                        <div className="flex-1"><h2 className="card-title leading-none">My Swaps</h2>
-                            <p className="text-base-content text-opacity-40 leading-none">My fucking s(laves)waps</p>
-                        </div>
-                        <button className="btn btn-square  btn-sm btn-outline btn-primary">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                 className="inline-block w-6 h-6 stroke-current">
-                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
-                                      d="M9 5l7 7-7 7"/>
-                            </svg>
-                        </button>
-                    </div>
-                </div>
-
                 <div className="card border  compact mt-2 side bg-base-100">
                     <div className="flex-row items-center card-body">
                         <div className="flex-1"><h2 className="card-title leading-none">Things</h2>
-                            <p className="text-base-content text-opacity-40 leading-none">My fucking things</p>
+                            <p className="text-base-content text-opacity-40 leading-none">My things</p>
                         </div>
                         <button className="btn btn-square  btn-sm btn-outline btn-primary">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
@@ -119,8 +89,23 @@ const ProfilePage: NextPage = () => {
 
                 <div className="card border  compact mt-2 side bg-base-100">
                     <div className="flex-row items-center card-body">
-                        <div className="flex-1"><h2 className="card-title leading-none">My Swaps</h2>
-                            <p className="text-base-content text-opacity-40 leading-none">My fucking s(laves)waps</p>
+                        <div className="flex-1"><h2 className="card-title leading-none">My Ads</h2>
+                            <p className="text-base-content text-opacity-40 leading-none">...</p>
+                        </div>
+                        <button className="btn btn-square  btn-sm btn-outline btn-primary">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                 className="inline-block w-6 h-6 stroke-current">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
+                                      d="M9 5l7 7-7 7"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <div className="card border  compact mt-2 side bg-base-100">
+                    <div className="flex-row items-center card-body">
+                        <div className="flex-1"><h2 className="card-title leading-none">Subscriptions</h2>
+                            <p className="text-base-content text-opacity-40 leading-none">...</p>
                         </div>
                         <button className="btn btn-square  btn-sm btn-outline btn-primary">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
