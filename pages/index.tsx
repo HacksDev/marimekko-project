@@ -29,15 +29,17 @@ const StoryRenderer = ({currentStoryIdx, allStories, onStoriesClosed}: StoryRend
     }
 
     return (
+        <div className="story-fix">
         <Stories
             stories={allStories}
-            defaultInterval={1500}
+            defaultInterval={5000}
             width={window.visualViewport.width}
             height={window.visualViewport.height}
             currentIndex={currentStoryIdx}
             onStoryStart={onStoryStart}
             onStoryEnd={onStoryEnd}
         />
+        </div>
     );
 };
 
@@ -51,10 +53,11 @@ const useMainPageStories = ({stories}: { stories: StoryDefinition[] }) => {
                     style={{position: "absolute", zIndex: 1000000000, right: "12px", top: "20px", width: "24px"}}
                     onClick={() => setCurrentStoryIdx(undefined)}
                 >
-                    <WhiteCrossIcon />
+                    <WhiteCrossIcon/>
                 </button>
-                <StoryRenderer currentStoryIdx={currentStoryIdx} allStories={stories}
-                               onStoriesClosed={() => setCurrentStoryIdx(undefined)} />
+                <h1 hidden>Hello</h1>
+                <StoryRenderer  currentStoryIdx={currentStoryIdx} allStories={stories}
+                               onStoriesClosed={() => setCurrentStoryIdx(undefined)}/>
             </div>;
         } else {
             return children;
@@ -64,34 +67,29 @@ const useMainPageStories = ({stories}: { stories: StoryDefinition[] }) => {
     const MainPageStoryCard = ({story, onClick}: { story: StoryDefinition, onClick: () => void }) => {
         const style: React.CSSProperties = {
             display: "inline-block",
-            border: "1px solid",
-            borderRadius: '6px',
-            width: "120px",
-            height: "120px",
-            textOverflow: "ellipsis",
-            padding: "6px",
-            margin: "10px",
             backgroundImage: `url("${story.url}")`,
-            backgroundSize: 'contain'
+            backgroundSize: 'cover',
+            backgroundPosition: 'center'
         };
         if (!story.viewed) {
             style.borderColor = "blue";
         }
-        return <div style={style} onClick={onClick}>
+        return <div style={style}
+                    className="rounded-full w-16 m-3 h-16 md:w-24 md:h-24 ring ring-secondary ring-offset-base-100 ring-offset-2"
+                    onClick={onClick}>
             <span>{story.header}</span>
         </div>;
     };
 
     const MainPageStoriesReel = () => {
         const children = stories.map((story, i) =>
-            <MainPageStoryCard key={i} story={story} onClick={() => setCurrentStoryIdx(i)} />,
+            <MainPageStoryCard key={i} story={story} onClick={() => setCurrentStoryIdx(i)}/>,
         );
         const style: React.CSSProperties = {
             overflowX: "auto",
-            margin: "16px",
             whiteSpace: "nowrap"
         };
-        return <div className="main-page-stories-reel" style={style}>
+        return <div style={style}>
             {children}
         </div>;
     };
@@ -105,43 +103,23 @@ const useMainPageStories = ({stories}: { stories: StoryDefinition[] }) => {
 const Home: NextPage = () => {
     const {MainPageStoriesWrapper, MainPageStoriesReel} = useMainPageStories({
         stories: [
-            {
-                url: "/images/kermit.jpeg",
-                header: "Nice Cock",
-                viewed: true
-            },
-            {
-                url: "/images/kermit.jpeg",
-                header: "Awesome Balls",
-            },
-            {
-                url: "/images/kermit.jpeg",
-                header: "Говно",
-            },
-            {
-                url: "/images/kermit.jpeg",
-                header: "Залупа",
-            },
-            {
-                url: "/images/kermit.jpeg",
-                header: "Пенис",
-            },
-            {
-                url: "/images/kermit.jpeg",
-                header: "Хер",
-            },
+            {url: "/images/stories/Story1.png"},
+            {url: "/images/stories/Story2.png"},
+            {url: "/images/stories/Story3.png"},
+            {url: "/images/stories/Story4.png"},
+            {url: "/images/stories/Story5.png"},
         ],
     });
 
     return (
         <MainPageStoriesWrapper>
             <MainContent>
-                <TopNavigation />
-                <MainPageStoriesReel />
+                <TopNavigation/>
+                <MainPageStoriesReel/>
                 <div className="flex-col px-2 mb-5">
                     <div className="card">Hello</div>
                 </div>
-                <BottomNavigation />
+                <BottomNavigation/>
             </MainContent>
         </MainPageStoriesWrapper>
     );

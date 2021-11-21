@@ -68,7 +68,7 @@ const ProfilePage: NextPage = () => {
 
                 <div className="card border  compact mt-2 side bg-base-100">
                     <Link href={'/profile/things'} passHref={true}>
-                        <div className="flex-row items-center card-body">
+                        <div className="flex-row cursor-pointer items-center card-body">
                             <div className="flex-1"><h2 className="card-title leading-none">Things</h2>
                                 <p className="text-base-content text-opacity-40 leading-none">Things you have
                                     purchased</p>
