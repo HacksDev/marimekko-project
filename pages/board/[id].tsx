@@ -51,6 +51,18 @@ const BoardModelPage: NextPage = () => {
                             this organic theme and designed an entire range of floral prints. Today, the iconic flower
                             represents creativity.</p>
 
+                        <div className="alert alert-success">
+                            <div className="flex-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                     className="w-6 h-6 mx-1 stroke-current">
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
+                                          d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                </svg>
+                                <label>Buying this item saves 3500 liters of water</label>
+                            </div>
+                        </div>
+
+
                         <ol className="steps text-gray-600 steps-vertical">
                             <li className="step step-primary">
                                 <h4>10.12.3025 &mdash; Produced</h4>
