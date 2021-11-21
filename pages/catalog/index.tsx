@@ -37,13 +37,51 @@ const Home: NextPage = () => {
                             <Link passHref={true} href="/catalog/123">
                                 <div className="cursor-pointer c-card border block bg-white rounded-lg overflow-hidden">
                                     <div className="w-full overflow-hidden">
-                                        <img  src="/images/product_1.jpg" alt="proruct card"/>
+                                        <img  src="/images/product_2.jpg" alt="proruct card"/>
                                     </div>
                                     <div className="p-2">
-                                        <h2 className="font-bold">Kyllikki Unikko</h2>
+                                        <h2 className="font-bold">Laulelma Unikot</h2>
+                                        <div className="flex justify-between align-bottom flex-row">
+                                            <p className="font-extralight text-right text-gray-700 text-sm">Trousers</p>
+                                            <p className="font-extralight text-right text-gray-700 text-sm">40,00 €</p>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                            </Link>
+                        </div>
+
+                        <div className="w-1/2 md:w-1/2 xl:w-1/4 p-2">
+                            <Link passHref={true} href="/catalog/123">
+                                <div className="cursor-pointer c-card border block bg-white rounded-lg overflow-hidden">
+                                    <div className="w-full overflow-hidden">
+                                        <img  src="/images/product_3.jpg" alt="proruct card"/>
+                                    </div>
+                                    <div className="p-2">
+                                        <h2 className="font-bold">Lujentaa Kivet</h2>
                                         <div className="flex justify-between align-bottom flex-row">
                                             <p className="font-extralight text-right text-gray-700 text-sm">Skirt</p>
-                                            <p className="font-extralight text-right text-gray-700 text-sm">45,00 €</p>
+                                            <p className="font-extralight text-right text-gray-700 text-sm">47,00 €</p>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                            </Link>
+                        </div>
+
+                        <div className="w-1/2 md:w-1/2 xl:w-1/4 p-2">
+                            <Link passHref={true} href="/catalog/123">
+                                <div className="cursor-pointer c-card border block bg-white rounded-lg overflow-hidden">
+                                    <div className="w-full overflow-hidden">
+                                        <img  src="/images/product_4.jpg" alt="proruct card"/>
+                                    </div>
+                                    <div className="p-2">
+                                        <h2 className="font-bold">Kasvikuu Unikko</h2>
+                                        <div className="flex justify-between align-bottom flex-row">
+                                            <p className="font-extralight text-right text-gray-700 text-sm">Dress</p>
+                                            <p className="font-extralight text-right text-gray-700 text-sm">50,00 €</p>
                                         </div>
 
 

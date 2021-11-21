@@ -11,8 +11,6 @@ const Index: NextPage = () => {
         <MainContent>
             <TopNavigation showBackArrow={true}/>
             <div className="flex-col px-2 mb-5 overflow-hidden">
-                <button className="btn btn-secondary btn-sm btn-block">Add new item</button>
-
                 <div className="container">
                     <div className="flex flex-wrap -mx-2">
 
