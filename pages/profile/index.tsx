@@ -20,7 +20,7 @@ const ProfilePage: NextPage = () => {
                                 </div>
                             </div>
                         </div>
-                        <div><h2 className="leading-none card-title">Vladimir Aksenov</h2> <p
+                        <div><h2 className="leading-none card-title">Kate Vissarionova</h2> <p
                             className="leading-none text-base-content text-opacity-40">240 points</p>
                         </div>
                     </div>
