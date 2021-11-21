@@ -85,33 +85,38 @@ const ProfilePage: NextPage = () => {
                 </div>
 
                 <div className="card border  compact mt-2 side bg-base-100">
-                    <div className="flex-row items-center card-body">
-                        <div className="flex-1"><h2 className="card-title leading-none">My Ads</h2>
-                            <p className="text-base-content text-opacity-40 leading-none">Ads that you have created</p>
+                    <Link href={'/profile/ads'} passHref={true}>
+                        <div className="flex-row cursor-pointer items-center card-body">
+                            <div className="flex-1"><h2 className="card-title leading-none">My Ads</h2>
+                                <p className="text-base-content text-opacity-40 leading-none">Ads that you have
+                                    created</p>
+                            </div>
+                            <button className="btn btn-square  btn-sm btn-outline btn-primary">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                     className="inline-block w-6 h-6 stroke-current">
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
+                                          d="M9 5l7 7-7 7"/>
+                                </svg>
+                            </button>
                         </div>
-                        <button className="btn btn-square  btn-sm btn-outline btn-primary">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                 className="inline-block w-6 h-6 stroke-current">
-                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
-                                      d="M9 5l7 7-7 7"/>
-                            </svg>
-                        </button>
-                    </div>
+                    </Link>
                 </div>
 
                 <div className="card border  compact mt-2 side bg-base-100">
-                    <div className="flex-row items-center card-body">
-                        <div className="flex-1"><h2 className="card-title leading-none">Subscriptions</h2>
-                            <p className="text-base-content text-opacity-40 leading-none">Managing subscriptions</p>
+                    <Link href={'/profile/subscriptions'} passHref={true}>
+                        <div className="flex-row items-center card-body">
+                            <div className="flex-1"><h2 className="card-title leading-none">Subscriptions</h2>
+                                <p className="text-base-content text-opacity-40 leading-none">Managing subscriptions</p>
+                            </div>
+                            <button className="btn btn-square  btn-sm btn-outline btn-primary">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                     className="inline-block w-6 h-6 stroke-current">
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
+                                          d="M9 5l7 7-7 7"/>
+                                </svg>
+                            </button>
                         </div>
-                        <button className="btn btn-square  btn-sm btn-outline btn-primary">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                 className="inline-block w-6 h-6 stroke-current">
-                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
-                                      d="M9 5l7 7-7 7"/>
-                            </svg>
-                        </button>
-                    </div>
+                    </Link>
                 </div>
 
             </div>

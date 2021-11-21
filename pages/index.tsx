@@ -117,7 +117,7 @@ const Home: NextPage = () => {
                 <TopNavigation/>
                 <MainPageStoriesReel/>
                 <div className="flex-col px-2 mb-5">
-                    <div className="card">Hello</div>
+                    <div className="card">Useful and interactive information</div>
                 </div>
                 <BottomNavigation/>
             </MainContent>

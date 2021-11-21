@@ -63,7 +63,7 @@ const ThingModalPage: NextPage = () => {
                             </li>
                         </ol>
 
-                        <Link href="/" passHref={true}>
+                        <Link href="/profile/ads/create" passHref={true}>
                             <button className="btn btn-block btn-secondary">Create Ads</button>
                         </Link>
 
