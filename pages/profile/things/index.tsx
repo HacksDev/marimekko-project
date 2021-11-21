@@ -46,10 +46,10 @@ const Index: NextPage = () => {
                             <Link passHref={true} href="/profile/things/123">
                                 <div className="cursor-pointer c-card border block bg-white overflow-hidden">
                                     <div className="w-full overflow-hidden">
-                                        <img src="/images/product_1.jpg" alt="proruct card"/>
+                                        <img src="/images/product_2.jpg" alt="proruct card"/>
                                     </div>
                                     <div className="p-2">
-                                        <h2 className="font-bold">Kyllikki Unikko</h2>
+                                        <h2 className="font-bold">Laulelma Unikot</h2>
                                         <p className="font-extralight text-gray-700 text-xs">2019</p>
                                         <div className="flex justify-between align-bottom flex-row">
                                             <div
