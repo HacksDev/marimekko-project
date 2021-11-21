@@ -18,7 +18,7 @@ const Home: NextPage = () => {
                             <Link passHref={true} href="/catalog/123">
                                <div className="cursor-pointer c-card border block bg-white rounded-lg overflow-hidden">
                                 <div className="w-full overflow-hidden">
-                                    <img className="h-full" src="/images/product_1.jpg" alt="proruct card"/>
+                                    <img  src="/images/product_1.jpg" alt="proruct card"/>
                                 </div>
                                 <div className="p-2">
                                     <h2 className="font-bold">Kyllikki Unikko</h2>
@@ -37,7 +37,7 @@ const Home: NextPage = () => {
                             <Link passHref={true} href="/catalog/123">
                                 <div className="cursor-pointer c-card border block bg-white rounded-lg overflow-hidden">
                                     <div className="w-full overflow-hidden">
-                                        <img className="h-full" src="/images/product_1.jpg" alt="proruct card"/>
+                                        <img  src="/images/product_1.jpg" alt="proruct card"/>
                                     </div>
                                     <div className="p-2">
                                         <h2 className="font-bold">Kyllikki Unikko</h2>
