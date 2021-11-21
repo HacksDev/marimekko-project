@@ -117,8 +117,35 @@ const Home: NextPage = () => {
                 <TopNavigation/>
                 <MainPageStoriesReel/>
                 <div className="flex-col px-2 mb-5">
-                    <div className="card">Useful and interactive information</div>
+
+
+                    <div className="card border p-4 compact side bg-base-100">
+
+                        <h1 className="text-lg text-secondary">Concept</h1>
+                        <p>
+                            A service created to sell Marimekko preloved goods using NFT technology in order to prove goods originality and track their lifecycle.
+                        </p>
+
+                        <h1 className="text-lg text-secondary mt-4">Service purpose</h1>
+                        <ul>
+                            <li>
+                                <div className="badge badge-primary mr-1 badge-xs"/>
+                                Make a purchase of expensive and quality goods more reasonable from a customer&#39;s viewpoint.</li>
+                            <li>
+                                <div className="badge badge-primary mr-1 badge-xs"/>
+                                Make the apparel retail industry more environmentally friendly by encouraging hand-to-market purchases instead of buying new goods.</li>
+                            <li>
+                                <div className="badge badge-primary mr-1 badge-xs"/>
+                                Better dispose of sales the way goods will not gather dust in closets.</li>
+                            <li>
+                                <div className="badge badge-primary mr-1 badge-xs"/>
+                                Build a loyal brand community.</li>
+                        </ul>
+                    </div>
+
+
                 </div>
+
                 <BottomNavigation/>
             </MainContent>
         </MainPageStoriesWrapper>

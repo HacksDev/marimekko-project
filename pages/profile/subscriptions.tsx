@@ -26,7 +26,7 @@ const SubscriptionsPage: NextPage = () => {
                             <div className="w-1/2 md:w-1/2 xl:w-1/4 p-2">
                                 <div className="cursor-pointer c-card border block bg-white overflow-hidden">
                                     <div className="w-full overflow-hidden">
-                                        <img className="h-full" src="/images/product_1.jpg" alt="proruct card"/>
+                                        <img src="/images/product_1.jpg" alt="proruct card"/>
                                     </div>
                                     <div className="p-2">
                                         <h2 className="font-bold">
@@ -56,7 +56,7 @@ const SubscriptionsPage: NextPage = () => {
                             <div className="w-1/2 md:w-1/2 xl:w-1/4 p-2 ">
                                 <div className="cursor-pointer c-card border block bg-white overflow-hidden">
                                     <div className="w-full overflow-hidden">
-                                        <img className="h-full" src="/images/product_1.jpg" alt="proruct card"/>
+                                        <img src="/images/product_1.jpg" alt="proruct card"/>
                                     </div>
                                     <div className="p-2">
                                         <h2 className="font-bold">Kyllikki Unikko</h2>
